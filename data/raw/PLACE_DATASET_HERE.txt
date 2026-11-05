@@ -1,0 +1,20 @@
+PUT YOUR KAGGLE DATASET FILE IN THIS FOLDER
+============================================
+
+Recommended dataset: "E-Commerce Data" (Online Retail)
+Kaggle:  https://www.kaggle.com/datasets/carrie1/ecommerce-data
+File:    data.csv   (~541,909 rows, Dec 2010 - Dec 2011)
+
+Steps:
+  1. Download the dataset from Kaggle and unzip it.
+  2. Copy data.csv into this folder  ->  data/raw/data.csv
+  3. Run:  python run_pipeline.py
+
+Also supported (auto-detected, columns are renamed automatically):
+  - "Online Retail II" (UCI) as .csv or .xlsx  (columns: Invoice, Price, Customer ID ...)
+
+Required columns (after renaming):
+  InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
+
+If this folder has no .csv/.xlsx file, the project falls back to a synthetic
+dataset with the SAME schema so everything still runs.

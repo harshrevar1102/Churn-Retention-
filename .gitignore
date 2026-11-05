@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/*.csv
+data/raw/*.xlsx
+data/synthetic/*.csv
+data/processed/*
+reports/outputs/*
+!data/**/.gitkeep
+!reports/outputs/.gitkeep
